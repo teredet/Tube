@@ -1,0 +1,9 @@
+<h2>Hypertube</h2>
+<a target="_blank" href="/login/">Log in</a>
+<p>{{ video_count }} videos</p>
+<div>
+    {% for video in videos %}
+    <a href="/tube/watch/{{ video.id }}/">{{ video.title }}</a><br>
+    {% endfor %}
+</div>
+<a target="_blank" href="/tube/upload/">Upload video</a>
